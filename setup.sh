@@ -12,7 +12,7 @@ if [ -f rtmpie.conf ]; then
   exit 1
 fi
 
-wget -O docker-compose.yml https://raw.githubusercontent.com/ngrie/rtmpie/main/docker/docker-compose.prod.yaml
+wget -O docker-compose.yml https://raw.githubusercontent.com/kmogun/rtmpie/main/docker/docker-compose.prod.yaml
 
 while [ -z "${RTMPIE_HOSTNAME}" ]; do
   read -p "Enter the hostname you want to use for RTMPie (e.g. demo.rtmpie.de): " -e RTMPIE_HOSTNAME
